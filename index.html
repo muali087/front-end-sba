@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e2080abd5e.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>website</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                photo<span>pi</span>X
+            </div>
+             <div class="menu">
+                 <a href="#">Home</a>
+                 <a href="#">About</a>
+                 <a href="#">Gallery</a>
+                 <a href="#">Contact</a>
+             </div> 
+             <div class="icon">
+                <form action="/login1.html">
+                 <i class="fa fa-search fa-1.9x"></i>
+                 <a href="#">Login</a>
+            
+             <!-- <div class="drop-down">
+                <label for="">Grade Website</label>
+               <select name="" id="age_group">
+                   <option value="Good">Good</option>
+                   <option value="Better">Better</option>
+                   <option value="best">best</option>
+                </div>   -->
+              </div>  
+             <section class="h-text">
+                 <i class="fa fa-camera fa-2x"></i>
+                 <h1 data-aos="fade-up">Capturing the moments that captative your heart</h1>
+                 <input type="text" name="" placeholder="search here...">
+                 <button><i class="fa fa-search fa-1.9x"></i></button>
+             </section>  
+        </nav> 
+        
+    </header>
+    <section class="filter-gallery">
+        <div class="portfolio-menu">
+            <ul>
+                <li class="active" data-filter="*">All</li>
+                <li data-filter=".nature">Nature</li>
+                <li data-filter=".fashion">Fashion</li>
+                <li data-filter=".wedding">Wedding</li>
+            </ul>
+        </div>
+        <div class="portfolio-item">
+            <div class="item nature" >
+                <img src="/img/p1.jpg" width="100" height="100">
+            </div>
+            <div class="item fashion" >
+                <img src="/img/p2.jpg" width="100" height="100">
+            </div>
+            <div class="item wedding" >
+                <img src="/img/p3.jpg" width="100" height="100">
+            </div>
+            <div class="item nature" >
+                <img src="/img/p4.jpg" width="100" height="100">
+            </div>
+            <div class="item fashion" >
+                <img src="/img/p5.jpg" width="100" height="100">
+            </div>
+            <div class="item wedding" >
+                <img src="/img/p6.jpg" width="100" height="100">
+            </div>
+            <div class="item nature" >
+                <img src="/img/p7.jpg" width="100" height="100">
+            </div>
+            <div class="item fashion" >
+                <img src="/img/p8.jpg" width="100" height="100">
+            </div>
+            <div class="item wedding" >
+                <img src="/img/p9.jpg" width="100" height="100">
+                
+            </div>
+        </div>
+        <!-- ########################### Filter Effect ############################# -->
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script class="text/javascript">
+         $('.portfolio-item').isotope({
+        // options
+        itemSelector: '.item',
+        layoutMode: 'fitRows'
+      });
+                  $('.portfolio-menu ul li').click(function(){ 
+                  $('.portfolio-menu ul li').removeClass('active');
+                  $(this).addClass('active');
+                  
+                  var selector = $(this).attr('data-filter');
+                  $('.portfolio-item').isotope({
+                      filter:selector
+                  });
+                  return false;
+                  });
+    </script>
+    <!-- ###################################### Filter effect End ############################### -->
+   <section class="member">
+       <div class="member-info" data-aos="zoom-in">
+           <h1>Our<span>Information</span></h1>
+           <p>What our member says</p>
+       </div>
+      
+       
+       <div class="member-card" data-aos="zoom-in">
+           <img src="/img/member.png">
+           <p>From Rajustan, doing gym is good for healthy life. It helps our body to fit. It release stress from our mind. Advantages of daily gym workouts and fitness exercises. Helps in weight loss. ...
+            Helps brain health and memory. Regular exercise improves blood flow to the brain and helps brain health and memory. ...  </p>
+            <h2>Maria Sharapova</h2>
+            <img src="/img/icon1.png" width="100">
+            <img src="/img/icon2.png" width="100">
+            <img src="/img/icon3.png" width="100">
+            <img src="/img/icon4.png" width="100">
+       </div>
+       <!-- Member Images -->
+       <div class="m-images" data-aos="zoom-in">
+           <!-- table -->
+           <table>
+               <tr>
+                <img src="/img/s1.jpg" width="170" height="170">
+                <img src="/img/s2.jpg" width="170" height="170">
+                <img src="/img/s3.jpg" width="170" height="170">
+                <img src="/img/s4.jpg" width="170" height="170">
+                <img src="/img/s5.jpg" width="170" height="170">
+                <img src="/img/s6.jpg" width="170" height="170">  
+               </tr>
+           </table>
+       </div>
+        <!-- Animiton effect -->
+   </section>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+    AOS.init();
+  </script>
+  <footer>
+      <div class="newsletter">
+          <div  data-aos="zoom-in">
+              <h2>Subscribe our news letter</h2>
+              <p>We are a team of non-cynics who truly care for our work.</p>
+          </div>
+          <div class="ntext">
+              <label">
+              <input type="text" name="" placeholder=" Enter your email">
+              <button>Subscribe</button>
+            </label>
+          </div>
+      </div>
+      <div class="container1">
+          <div class="item1">
+              <h1>Infomation</h1>
+              <p>Lorem ipsum dolor sit amet consectetur
+                   adipisicing elit. Excepturi, nesciunt.</p>
+              <i class="fa fa-whatsapp" data-aos="zoom-in" ></i>
+              <i class="fa fa-instagram" data-aos="zoom-in" ></i>
+              <i class="fa fa-telegram" data-aos="zoom-in"  ></i>
+              <i class="fa fa-twitter" data-aos= "zoom-in"  ></i>
+          </div>
+          <div class="item2" data-aos="zoom-in">
+              <h1>Useful.links</h1>
+              <p>About.us</p>
+              <p>Gallery</p>
+              <p>Block.posts</p>
+              <p>Pricing.plans</p>
+          </div>
+          <div class="item3"  data-aos="zoom-in">
+              <h1>Details</h1>
+              <p>Photographers</p>
+              <p>About</p>
+              <p>Gallery</p>
+              <p>Pricing.plans</p>
+          </div>
+          <div class="item4"  data-aos="zoom-in">
+              <h1>Help & Support</h1>
+              <p>Privacy policy</p>
+              <p>Term & Conditions</p>
+              <p>Technical Support</p>
+              <p>customer Care</p>
+          </div>
+          <div class="item5"  data-aos="zoom-in">
+              <select name="" id="dropdown">
+                  <option value="good">Grade-Me</option>
+                  <option value="good">Good</option>
+                  <option value="better">Better</option>
+                  <option value="best">Best</option>
+              </select>
+          </div>
+      </div>
+  </footer>
+</body>
+</html>

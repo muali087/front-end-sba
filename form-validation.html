@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/e2080abd5e.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>website</title>
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/form-validation.css">
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        photo<span>pi</span>X
+      </div>
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <div class="container1">
+
+    <!-- <form id="f1" action="" onsubmit="return validate();">  -->
+    <form id="form" action="/index.html" method="GET">
+      <h2 id="demo"></h2>
+      username: <input type="text" id="username" name="username" placeholder="Enter username" /> <br><br>
+      Password: <input type="password" id="password" name="password" placeholder="Enter password" /> <br><br>
+      <input type="submit" class="submit" name="submit" value="Login">
+      <label for="checkbox" class="label">
+    </form>
+  </div>
+  <div class="video">
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/mneK0yIE1S8" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+  </div>
+
+
+  <script>
+    var h1 = ["Login", "  Form", "  Validation"];
+    var colors = ["#e74c3c", "#d4c3c3"];
+    var text = "";
+    for (var i = 0; i < h1.length; i++) {
+
+      text += "<font color='" + colors[i] + "'>" + h1[i] + "</font>";
+    }
+    document.getElementById("demo").innerHTML = text;
+  </script>
+
+  <footer>
+    <script src="/form-validation.js"></script>
+
+  </footer>
+
+</body>
+
+
+</html>
